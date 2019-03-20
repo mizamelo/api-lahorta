@@ -1,7 +1,7 @@
 ## La Horta - **API**
 
-![BuiltBy](https://img.shields.io/badge/Nodejs-LaHorta-orange.svg "img.shields.io")
-[![Coverage Status](https://coveralls.io/repos/gitlab/mizamelo22/lahorta/badge.svg?branch=master)](https://coveralls.io/gitlab/mizamelo22/lahorta?branch=master)
+[![Build Status](https://travis-ci.org/mizamelo/api-lahorta.svg?branch=master)](https://travis-ci.org/mizamelo/api-lahorta)
+[![Coverage Status](https://coveralls.io/repos/github/mizamelo/api-lahorta/badge.svg?branch=master)](https://coveralls.io/github/mizamelo/api-lahorta?branch=master)
 
 `Tests`
 
