@@ -28,8 +28,7 @@
   },
   "scripts": {
     "pretest": "set NODE_ENV=test && sequelize db:migrate",
-    "test": "set NODE_ENV=test && jest",
-    "test:coverage": "jest --coverage",
+    "test": "set NODE_ENV=test && jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "posttest": "set NODE_ENV=test && sequelize db:migrate:undo:all",
     "start": "node src/server.js",
