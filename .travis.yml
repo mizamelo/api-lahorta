@@ -6,8 +6,11 @@ language:
 node_js:
   - node
 
+before_install:
+  - npm install
+
 install:
-  - npm ci
+  - npm install -g codecov
 
 script:
   - npm test
