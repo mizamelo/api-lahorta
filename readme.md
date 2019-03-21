@@ -1,4 +1,4 @@
-## La Horta - **API**
+## La Horta - __API__
 
 [![Build Status](https://travis-ci.org/mizamelo/api-lahorta.svg?branch=master)](https://travis-ci.org/mizamelo/api-lahorta)
 [![Coverage Status](https://coveralls.io/repos/github/mizamelo/api-lahorta/badge.svg)](https://coveralls.io/github/mizamelo/api-lahorta)
