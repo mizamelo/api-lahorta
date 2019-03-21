@@ -7,14 +7,10 @@ node_js:
   - node
 
 install:
-  - npm install
-
-before_install:
-  - npm install -g codecov
+  - npm ci
 
 script:
   - npm test
-  - codecov
 
 notifications:
   email: false
