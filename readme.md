@@ -1,7 +1,7 @@
 ## La Horta - **API**
 
 [![Build Status](https://travis-ci.org/mizamelo/api-lahorta.svg?branch=master)](https://travis-ci.org/mizamelo/api-lahorta)
-[![Coverage Status](https://coveralls.io/repos/gitlab/mizamelo22/lahorta/badge.svg?branch=master)](https://coveralls.io/gitlab/mizamelo22/lahorta?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/mizamelo/api-lahorta/badge.svg)](https://coveralls.io/github/mizamelo/api-lahorta)
 
 `Tests`
 
@@ -16,9 +16,3 @@ Ou, dependendo de qual genreciador de dependências vecê utilize:
 ```bash
 $   npm test
 ```
-
-`Coverage`
-
-Para melhor visualização dos teste realizados, podemos ver no link abaixo que todas as funcionalidades desta aplicação estão devidamente testadas.
-
-[Dashboard Coverage](./__tests__/coverage/lcov-report/index.html)
