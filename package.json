@@ -18,7 +18,7 @@
     "sequelize": "^5.1.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.3",
+    "codecov": "^3.2.0",
     "factory-girl": "^5.0.4",
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
@@ -28,8 +28,7 @@
   },
   "scripts": {
     "pretest": "set NODE_ENV=test && sequelize db:migrate",
-    "test": "set NODE_ENV=test && jest --coverage --coverageReporters=text-lcov | coveralls",
-    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "test": "set NODE_ENV=test && jest codecov",
     "posttest": "set NODE_ENV=test && sequelize db:migrate:undo:all",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js --ignore __tests__"

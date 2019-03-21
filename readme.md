@@ -1,7 +1,7 @@
 ## La Horta - __API__
 
 [![Build Status](https://travis-ci.org/mizamelo/api-lahorta.svg?branch=master)](https://travis-ci.org/mizamelo/api-lahorta)
-[![Coverage Status](https://coveralls.io/repos/github/mizamelo/api-lahorta/badge.svg)](https://coveralls.io/github/mizamelo/api-lahorta)
+[![codecov](https://codecov.io/gh/mizamelo/api-lahorta/branch/master/graph/badge.svg)](https://codecov.io/gh/mizamelo/api-lahorta)
 
 `Tests`
 
