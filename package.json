@@ -27,9 +27,9 @@
     "supertest": "^4.0.2"
   },
   "scripts": {
-    "pretest": "set NODE_ENV=test && sequelize db:migrate",
-    "test": "set NODE_ENV=test && jest",
-    "posttest": "set NODE_ENV=test && sequelize db:migrate:undo:all",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js --ignore __tests__"
   }
