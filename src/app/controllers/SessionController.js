@@ -1,5 +1,5 @@
 const { User } = require("../models");
-const Mail = require("../services/MailService");
+// const Mail = require("../services/MailService");
 
 class SessionController {
   async store(req, res) {
@@ -15,17 +15,19 @@ class SessionController {
       return res.status(401).json({ message: "Senha inválida" });
     }
 
-    await Mail.send({
-      from: process.env.MAIL_FROM,
-      to: `${user.name} <${user.email}>`,
-      subject: "Um novo acesso ocorreu em sua conta",
-      text: `Olá, ${user.name}. Verificamos um novo acesso em sua conta.`
-    });
+    // await Mail.send({
+    //   from: process.env.MAIL_FROM,
+    //   to: `${user.name} <${user.email}>`,
+    //   subject: "Um novo acesso ocorreu em sua conta",
+    //   text: `Olá, ${user.name}. Verificamos um novo acesso em sua conta.`
+    // });
 
     return res.json({
       token: await user.generateToken()
     });
   }
+
+  async register(req, res) {}
 }
 
 module.exports = new SessionController();

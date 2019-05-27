@@ -6,7 +6,7 @@ const uuid = require("uuid/v4");
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    const items = generateFakeItems(1);
+    const items = generateFakeItems(20);
     // console.log(items[0]);
     return queryInterface.bulkInsert("products", items, {});
   },
