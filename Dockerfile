@@ -7,9 +7,9 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Install app dependencies
-RUN npm install
+# RUN npm install
 # If you are building your code for production
-# RUN npm ci --only=production
+RUN npm ci --only=production
 
 # Install Sequelize-cli
 RUN npm install -g sequelize-cli
