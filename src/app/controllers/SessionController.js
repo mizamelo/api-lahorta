@@ -32,8 +32,7 @@ class SessionController {
       });
     } catch (err) {
       console.log(err);
-      res.status(401).json({ msg: "error" });
-      throw err;
+      res.status(401).json({ msg: error });
     }
   }
 
