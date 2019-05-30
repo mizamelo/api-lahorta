@@ -7,7 +7,7 @@ class ProductController {
     const { p, order, by, page } = req.query;
     const orderBy = by ? by : "asc";
     const options = {
-      attributes: ["id", "name", "description", "price", "discount"],
+      attributes: ["id", "name", "description", "price", "discount", "image"],
       page: page ? page : 1, // Default 1
       paginate: p && p, // Default 25
       order: order && [[order, orderBy]]
