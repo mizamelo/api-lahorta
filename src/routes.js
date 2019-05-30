@@ -4,6 +4,7 @@ const ProductController = require("./app/controllers/ProductController");
 const authMiddleware = require("./app/middlewares/auth");
 
 routes.post("/sessions", SessionController.store);
+routes.post("/sessions/register", SessionController.register);
 routes.get("/products", ProductController.index);
 
 routes.use(authMiddleware);
