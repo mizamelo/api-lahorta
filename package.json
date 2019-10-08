@@ -1,23 +1,24 @@
 {
-  "name": "lahorta",
+  "name": "eagle",
   "version": "1.0.0",
-  "description": "Api LaHorta",
+  "description": "Api Eagle",
   "main": "index.js",
-  "repository": "https://github.com/mizamelo/lahorta",
   "author": "Mizael Melo",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "cpf-cnpj-validator": "^0.1.0",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
-    "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
+    "nexmo": "^2.4.2",
     "nodemailer": "^5.1.1",
     "pg": "^7.9.0",
     "sequelize": "^5.1.0",
-    "sequelize-paginate": "^1.1.6"
+    "sequelize-paginate": "^1.1.6",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "codecov": "^3.2.0",

@@ -1,16 +1,13 @@
-const routes = require("express").Router();
-const SessionController = require("./app/controllers/SessionController");
-const ProductController = require("./app/controllers/ProductController");
-const authMiddleware = require("./app/middlewares/auth");
+const routes = require('express').Router();
+const CompanyController = require('./app/controllers/CompanyController');
+const authMiddleware = require('./app/middlewares/auth');
 
-routes.post("/sessions", SessionController.store);
-routes.post("/sessions/register", SessionController.register);
-routes.get("/products", ProductController.index);
+routes.post('/', CompanyController.store);
 
 routes.use(authMiddleware);
-// Daqui para baixo penas rotas authenticadas
-routes.get("/payment", (req, res) => {
-  return res.status(200).send();
-});
+// Authenticate's routes only
+routes.post('/verify', CompanyController.verify);
+routes.post('/resubmit', CompanyController.resubmit);
+routes.post('/verify-email', CompanyController.verifyEmail);
 
 module.exports = routes;
