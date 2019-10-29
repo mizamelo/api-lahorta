@@ -11,7 +11,7 @@ Para rodar os testes basta apenas, na raiz do projeto, executar o seguinte coman
 $ yarn test
 ```
 
-Ou, dependendo de qual genreciador de dependências vecê utilize:
+Ou, dependendo de qual gerenciador de dependências vecê utilize:
 
 ```bash
 $   npm test
