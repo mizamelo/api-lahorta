@@ -114,16 +114,6 @@ class CompanyController {
       return res.json({ error });
     }
 
-    // nexmo.verify.check(
-    //   {
-    //     request_id: requestId,
-    //     code
-    //   },
-    //   (err, result) => {
-    //     const response = err ? err : result;
-    //     return res.json({ response });
-    //   }
-    // );
   }
 
   async resubmit(req, res) {
