@@ -21,7 +21,7 @@
     "yup": "^0.27.0"
   },
   "devDependencies": {
-    "codecov": "^3.2.0",
+    "codecov": "^3.6.5",
     "factory-girl": "^5.0.4",
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
